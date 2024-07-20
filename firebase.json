@@ -1,0 +1,6 @@
+{
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "predeploy": ["npm run build"]
+}
