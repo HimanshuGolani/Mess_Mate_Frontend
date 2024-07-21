@@ -2,5 +2,21 @@
   "storage": {
     "rules": "storage.rules"
   },
-  "predeploy": ["npm run build"]
+  "predeploy": [
+    "npm run build"
+  ],
+  "hosting": {
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
 }
